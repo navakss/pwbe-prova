@@ -1,0 +1,239 @@
+type: collection.insomnia.rest/5.0
+name: Scratch Pad
+meta:
+  id: wrk_scratchpad
+  created: 1755773472881
+  modified: 1755773472881
+  description: ""
+collection:
+  - name: Biblioteca
+    meta:
+      id: fld_bab19c04ad0d478fb69945e969474f67
+      created: 1755786029864
+      modified: 1755786029864
+      sortKey: -1755786029864
+      description: ""
+    children:
+      - name: Usuarios
+        meta:
+          id: fld_f8aeaa9836cd47e38bd1a96b13f4afbd
+          created: 1755786040827
+          modified: 1755786045887
+          sortKey: -1755786045862
+          description: ""
+      - name: Livros
+        meta:
+          id: fld_f9f8a94a7e3b409e81d4e0ea141b5297
+          created: 1756389287217
+          modified: 1756389287217
+          sortKey: -1756389287217
+          description: ""
+  - name: Spotify
+    meta:
+      id: fld_5585a8b5fe6c4d33af8b796e7ca51cf1
+      created: 1756991748160
+      modified: 1756991748160
+      sortKey: -1756991748160
+      description: ""
+    children:
+      - name: Usuarios
+        meta:
+          id: fld_9e8dd41a91bc421cbe1017512c5071d1
+          created: 1756991758353
+          modified: 1756991791845
+          sortKey: -1756991787270
+          description: ""
+      - name: Musicas
+        meta:
+          id: fld_dd56a6dcd03b46d18949d16250d21ce7
+          created: 1757004785834
+          modified: 1757004785834
+          sortKey: -1756991767715
+          description: ""
+  - name: Hotel
+    meta:
+      id: fld_8fc4a04def314ac1b9edbd264dd5503e
+      created: 1757608889336
+      modified: 1757608889336
+      sortKey: -1757608889336
+      description: ""
+    children:
+      - name: Reservas
+        meta:
+          id: fld_7fadbeeb90644828a1430a1a0b0735ba
+          created: 1757608906279
+          modified: 1757608908983
+          sortKey: -1757608908929
+          description: ""
+  - name: Loja
+    meta:
+      id: fld_77ae8141b01e4216a3e098c54c4e26b7
+      created: 1758200283032
+      modified: 1758200283032
+      sortKey: -1758200283032
+      description: ""
+    children:
+      - name: Pedidos
+        meta:
+          id: fld_89e7e139430c416f91a5b6c558ec4685
+          created: 1758200293176
+          modified: 1758200592746
+          sortKey: -1758200316236
+          description: ""
+      - name: Clientes
+        meta:
+          id: fld_06aa56c39ab544119a87352fe6599722
+          created: 1758200303182
+          modified: 1758200317686
+          sortKey: -1758200316336
+          description: ""
+      - name: Produtos
+        meta:
+          id: fld_4bd50a009f9847e5a21d503bf7d12bf0
+          created: 1758200312614
+          modified: 1758200320125
+          sortKey: -1758200316436
+          description: ""
+        children:
+          - url: http://localhost:3000/produto/2323
+            name: Atualizar
+            meta:
+              id: req_3b66ea5af1134bd29a11bb86611a1753
+              created: 1758200394413
+              modified: 1758204080515
+              isPrivate: false
+              description: ""
+              sortKey: -1758200502203
+            method: PATCH
+            body:
+              mimeType: application/json
+              text: |-
+                {
+                        "nome":"Trena",
+                        "descricao":"Trena, a felicidade do homem moderno!",
+                        "preco":"R$35,00",
+                        "quant.estoque":"116",
+                        "codigo":"2323"
+                }
+            headers:
+              - name: Content-Type
+                value: application/json
+              - name: User-Agent
+                value: insomnia/11.6.0
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: http://localhost:3000/produto
+            name: Cadastrar
+            meta:
+              id: req_9fe3b42ee1f84f6cb4a0de6b745a3269
+              created: 1758200395948
+              modified: 1758204401144
+              isPrivate: false
+              description: ""
+              sortKey: -1758200502303
+            method: POST
+            body:
+              mimeType: application/json
+              text: |-
+                {
+                        "nome":"Trena",
+                        "descricao":"Trena, a felicidade do homem moderno!",
+                        "preco":"R$30,00",
+                        "quant.estoque":"116",
+                        "codigo":"2323"
+                }
+            headers:
+              - name: Content-Type
+                value: application/json
+              - name: User-Agent
+                value: insomnia/11.6.0
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: http://localhost:3000/produtos/1234
+            name: Buscar
+            meta:
+              id: req_d1f2844d9b32485eb5c4aac2457dec74
+              created: 1758200397357
+              modified: 1758204392176
+              isPrivate: false
+              description: ""
+              sortKey: -1758200502403
+            method: GET
+            headers:
+              - name: User-Agent
+                value: insomnia/11.6.0
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: http://localhost:3000/produtos
+            name: Listar
+            meta:
+              id: req_ecf8ea6573904b97b0fc390b6a0c6bae
+              created: 1758200398442
+              modified: 1758203276277
+              isPrivate: false
+              description: ""
+              sortKey: -1758200502503
+            method: GET
+            headers:
+              - name: User-Agent
+                value: insomnia/11.6.0
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: http://localhost:3000/produtos/2323
+            name: Apagar
+            meta:
+              id: req_6a3a1989f37147179a81344adb0f25ba
+              created: 1758200399749
+              modified: 1758204654474
+              isPrivate: false
+              description: ""
+              sortKey: -1758200502603
+            method: DELETE
+            headers:
+              - name: User-Agent
+                value: insomnia/11.6.0
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+cookieJar:
+  name: Default Jar
+  meta:
+    id: jar_99d30891da4bdcebc63947a8fc17f076de878684
+    created: 1755786017497
+    modified: 1755786017497
+environments:
+  name: Base Environment
+  meta:
+    id: env_99d30891da4bdcebc63947a8fc17f076de878684
+    created: 1755786017493
+    modified: 1755786017493
+    isPrivate: false
